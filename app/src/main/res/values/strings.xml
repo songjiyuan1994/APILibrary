@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">AndroidAPI</string>
+    <string name="category_animation">动画：animation</string>
+    <string name="category_app">应用：app</string>
+    <string name="subject_explode">Explode:中心移入或移出</string>
+    <string name="subject_slide">slide:从边缘移入或移出</string>
+    <string name="subject_fade">fade:调整透明度产生渐变效果</string>
+    <string name="Interpolator_name1">AccelerateDecelerate</string>
+    <string name="Interpolator_name2">Accelerate</string>
+    <string name="Interpolator_name3">Anticipate</string>
+    <string name="Interpolator_name4">AnticipateOvershoot</string>
+    <string name="Interpolator_name5">Bounce</string>
+    <string name="Interpolator_name6">Cycle</string>
+    <string name="Interpolator_name7">Decelerate</string>
+    <string name="Interpolator_name8">Linear</string>
+    <string name="Interpolator_name9">Overshoot</string>
+    <string name="text_duration">Duration</string>
+    <string name="text_interpolator">Interpolator</string>
+    <string name="text_transition">Transition</string>
+    <string name="btn_exit">退出</string>
 </resources>

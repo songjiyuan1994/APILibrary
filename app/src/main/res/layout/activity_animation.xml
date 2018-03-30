@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.songjiyuan.api.Activity.AnimationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/radio_interpolator"
+                android:text="@string/text_interpolator" />
+
+            <RadioGroup
+                android:id="@+id/radio_interpolator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_ip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/Interpolator_name1" />
+
+                <RadioButton
+                    android:id="@+id/radio_ip2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Interpolator_name2" />
+
+                <RadioButton
+                    android:id="@+id/radio_ip3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Interpolator_name3" />
+
+                <RadioButton
+                    android:id="@+id/radio_ip4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Interpolator_name4" />
+
+                <RadioButton
+                    android:id="@+id/radio_ip5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Interpolator_name5" />
+
+                <RadioButton
+                    android:id="@+id/radio_ip6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Interpolator_name6" />
+
+                <RadioButton
+                    android:id="@+id/radio_ip7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Interpolator_name7" />
+
+                <RadioButton
+                    android:id="@+id/radio_ip8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Interpolator_name8" />
+
+                <RadioButton
+                    android:id="@+id/radio_ip9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Interpolator_name9" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/seek_duration"
+                android:text="@string/text_duration" />
+
+            <SeekBar
+                android:id="@+id/seek_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="5000" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/linear_transition"
+                android:text="@string/text_transition"
+                android:transitionName="text"
+                tools:targetApi="lollipop" />
+
+
+            <LinearLayout
+                android:id="@+id/linear_transition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_explode"
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_explode"
+                    android:transitionName="transition"
+                    tools:targetApi="lollipop" />
+
+                <Button
+                    android:id="@+id/btn_slide"
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_slide"
+                    android:transitionName="transition"
+                    tools:targetApi="lollipop" />
+                <Button
+                    android:id="@+id/btn_fade"
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/subject_fade"
+                    android:transitionName="transition"
+                    tools:targetApi="lollipop" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
